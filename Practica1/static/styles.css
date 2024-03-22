@@ -1,0 +1,354 @@
+.intro{
+  text-align: center;
+  color: white;
+}
+
+@keyframes arcoiris {
+  0% { color: red; }
+  25% { color: yellow; }
+  50% { color: green; }
+  75% { color: blue; }
+  100% { color: red; }
+}
+
+@keyframes arcoirisHover{  
+0% { background-color: red; box-shadow: 0 0 1000px red;}
+25% { background-color: yellow; box-shadow: 0 0 1000px yellow;}
+50% { background-color: green; box-shadow: 0 0 1000px green;}
+75% { background-color: blue; box-shadow: 0 0 1000px blue;}
+100% { background-color: red; box-shadow: 0 0 1000px red;}
+}
+
+@keyframes escalado{
+  0% { color: red; transform: scale(1); }
+  25% { color: yellow; }
+  50% { color: green; transform: scale(2); }
+  75% { color: blue; }
+  100% { color: red; transform: scale(1); }
+}
+
+.title {
+  font-size: xx-large; 
+  margin-bottom: 20px;
+  color: chartreuse;
+  text-shadow: 0 0 3px rgb(175, 89, 255), 0 0 10px WHITE;
+  animation: escalado 5s linear infinite;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.Boton_buscar {
+  display: inline-block;
+  color: chartreuse;
+  text-shadow: 0 0 3px rgb(175, 89, 255), 0 0 10px WHITE;
+  background-color: chartreuse;
+  width: 450px;
+  height: 100px;
+  transition: all 2s;
+  transform-origin: center;
+  font-size: x-large;
+  padding: 10px 20px;
+  border: 2px solid rgb(0, 212, 212);
+  border-radius: 90%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 100px;
+  animation: arcoiris 3s linear infinite; 
+}
+
+.Boton_buscar:hover{
+  color: rgb(0, 212, 212);
+  width: 750PX;
+  animation: arcoirisHover 3s linear infinite;
+  font-size: 200%;
+}
+
+@keyframes flechaDerecha {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}
+
+.fas.fa-arrow-right{
+  color: chartreuse;
+  font-size: 50px;
+  animation: flechaDerecha 1s linear infinite;
+  text-shadow: 0 0 3px rgb(175, 89, 255), 0 0 10px WHITE;
+}
+
+@keyframes flechaIzquierda {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.fas.fa-arrow-left{
+  color: chartreuse;
+  font-size: 50px;
+  animation: flechaIzquierda 1s linear infinite;
+  text-shadow: 0 0 3px rgb(175, 89, 255), 0 0 10px WHITE;
+}
+
+.imagen{
+  background-image: url("https://media.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=790b76113753ylolhiza2x8dy0o9arj4qow0qfvbtnv84lt4&ep=v1_gifs_trending&rid=giphy.gif");
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes catMove {
+  0% { transform: translateX(0vw) scaleX(1); }
+  25% { transform: translateX(45vw) scaleX(1); }
+  50% { transform: translateX(95vw) scaleX(-1); }
+  75% { transform: translateX(45vw) scaleX(-1); }
+  100% { transform: translateX(0vw) scaleX(1); }
+}
+
+.rCatRainbow{
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemF2aTdvM3d2ZTcyYWVwNm81Y2Z3YWtpZm8wd3dkMmluaThyMHh4MCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/bjE9JbNSckM0w/giphy.gif");
+  animation: catMove 10s linear infinite;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  right: 0%;
+  font-family: "Protest Revolution", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+
+@keyframes arcoCaja{  
+  0% { background-color: red; box-shadow: 0 0 1000px red; transform: scale(1) translate(0, 0);}
+  10%{ background-color: orange; box-shadow: 0 0 1000px orange; transform: scale(1.1) translate(500px, -300px);}
+  20% { background-color: yellow; box-shadow: 0 0 1000px yellow; transform: scale(1.2) translate(150px, 200px);}
+  30% { background-color: green; box-shadow: 0 0 1000px green; transform: scale(1.3) translate(450px, -750px);}
+  40% { background-color: blue; box-shadow: 0 0 1000px blue; transform: scale(1.4) translate(-350px, 600px);}
+  50% { background-color: indigo; box-shadow: 0 0 1000px indigo; transform: scale(1.5) translate(800px, -350px);}
+  60% { background-color: violet; box-shadow: 0 0 1000px violet; transform: scale(1.4) translate(-550px, -400px);}
+  70% { background-color: purple; box-shadow: 0 0 1000px purple; transform: scale(1.3) translate(-100px, 450px);}
+  80% { background-color: pink; box-shadow: 0 0 1000px pink; transform: scale(1.2) translate(-750px, 500px);}
+  90% { background-color: white; box-shadow: 0 0 1000px white; transform: scale(1.1) translate(600px, -550px);}
+  100% { background-color: red; box-shadow: 0 0 1000px red; transform: scale(1) translate(0, 0);}
+}
+
+.rSticIzq{
+  animation: arcoCaja 15s linear infinite;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 35%;
+  left: 45%
+}
+
+.rSticIzq::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3llbWJjZ3dlcWdzejZueWkycGplY3FsNmlzaGI5YmNqa2tzNXZ2OCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/wgQehGhgQLA9W/giphy.gif");
+  background-size: cover;
+}
+
+@keyframes moveStic{
+  0% { transform: scale(1) translate(0, 0); }
+  25% { transform: scale(1.3) translate(1000px, 500px) rotate(180deg); }
+  50% { transform: scale(1.5) translate(-800px, 300px) rotate(0deg); }
+  75% { transform: scale(3) translate(900px, -400px) rotate(180deg); }
+  100% { transform: scale(1) translate(0, 0); }
+} 
+
+.rSticMid{
+  background-image: url("https://media.giphy.com/media/lcGpCOuBv8vazmUuwo/giphy.gif?cid=790b7611284ggb4iuniqzmsyd18r5k3xhkf0j76eepb3uicj&ep=v1_stickers_search&rid=giphy.gif&ct=s");
+  animation: moveStic 6s linear infinite;
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.rSticDer{
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGYxYmZkcTVsOWs2bnExNWFkdnB6NmI1MmcwNnpiank1NzJxNW9iOCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/OkoScrMcY324r1j1HZ/giphy.gif");
+  animation: moveStic 13s linear infinite;
+  background-size: cover;
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  right: 60%
+}
+
+.fondoFrase{
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW8zMnJlMXdxNGVpcTV6OW42Y201aHA0bHFoaWNqNjRmZHg3eWxhbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U3qYN8S0j3bpK/giphy.gif");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tituloPagina{
+  font-size: xx-large; 
+  margin-bottom: 20px;
+  animation: escalado 5s linear infinite;
+  margin-top: 2%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.stitch {  
+  background-image: url("https://media.giphy.com/media/5cREBFcGOkC2I/giphy.gif?cid=790b7611trkxq3r5zyjabihsi5vm5ywa4r63qq8i17jovppe&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25%;
+  width: 30%;
+  height: auto;
+  padding: 5%;
+  border-style: solid;
+  color: violet;
+  border-width: 10%;
+  text-indent: 10px;
+  font-family: "Protest Revolution", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: all 2s;
+}
+
+.stitch:hover{
+  box-shadow: violet 0px 0px 1000px;
+  transform: scale(1.3);
+}
+
+.text{
+  color: aqua;
+  text-shadow: 0 0 3px rgb(175, 89, 255), 0 0 10px WHITE;
+  justify-content: center;
+}
+
+.jugamos {
+  background-image: url("https://media.giphy.com/media/lKKwBahxuOstOqtISC/giphy.gif?cid=ecf05e470lcicfxcq63w6i2ui5dfnwt5rqi3x1dsq6llw4fe&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25%;
+  width: 30%;
+  height: auto;
+  padding: 5%;
+  border-style: dotted;
+  color: red;
+  border-width: 10px;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Protest Revolution", sans-serif;
+  transition: all 2s;
+}
+
+.jugamos:hover{
+  text-shadow: 0 0 3px #FF0000, 0 0 5px white;
+  box-shadow: red 0px 0px 1000px;
+  border-width: 15px;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20%;
+}
+
+.botonA, .botonTrol {
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+@keyframes move {
+  0% { transform: scale(1.1) translate(0, 0); }
+  25% { transform: scale(1.1) translate(250px, 50px) rotate(180deg); }
+  50% { transform: scale(1.1) translate(-160px, 30px) rotate(180deg); }
+  75% { transform: scale(1.1) translate(180px, -40px) rotate(180deg); }
+  100% { transform: scale(1.1) translate(0, 0); }
+}
+
+.botonTrol:hover {
+  background-color: black;
+  animation: move 1ms linear infinite;
+}
+
+.botonA:hover{
+  background-color: black;
+  scale: 1.1;
+}
+
+.botEstilo {
+  padding: 10px 20px;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  background-color: red;
+  color: white;
+  text-align: center; 
+  font-family: "Protest Revolution", sans-serif;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px white;
+}
+
+.textoJuego{
+  color: cyan;
+  font-size: x-large;
+  font-family: "Protest Revolution", sans-serif;
+  text-align: center;
+}
+
+.porqueSi{
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25%;
+  width: 30%;
+  height: auto;
+  padding: 5%;
+  border-style:double;
+  color: blue;
+  border-width: 10%;
+  text-align: center;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(90deg) scale(1.15); box-shadow: blue 0px 0px 1000px;}
+  50% { transform: rotate(180deg) scale(1.3); }
+  75% { transform: rotate(270deg) scale(1.15); box-shadow: blue 0px 0px 1000px;}
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.porqueSi:hover{
+  background-image: url("https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif?cid=790b7611pyum9lr70kopbh0lqluvhrjyw29rc665iuj49lce&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  
+  animation : spin 5s linear infinite;
+}
+
+.porqueSi:hover .tituloPorqueSi {
+  display: none;
+}
