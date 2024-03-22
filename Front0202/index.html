@@ -1,0 +1,87 @@
+<html>  
+    <head>
+        <style>
+            h1{
+                color: blueviolet;
+                text-decoration: wavy;
+                background-color: black;
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 25px;
+                
+            }
+            table{
+                color: aliceblue;
+                width: 50%;
+                margin: auto;
+                text-align: center;
+            }
+            td{
+                background: #fabada;
+                color: black;
+            }
+            td{
+                background: #fabada;
+                color: black;
+            }
+        </style>
+        <script>
+            var list = [];
+            function clearList(){
+                list = [];
+                renderList();
+            }
+
+            function renderList(){
+                
+                const lista = document.getElementById("lista");
+                lista.innerHTML="<ul>";
+                for (var i = 0; i <= list.length-1; i++) {
+                    lista.innerHTML += 
+                    `<li>
+                        ${list[i]}
+                        <button onclick="removeItem(${i})">Remove</button>
+                    </li>`;
+                }
+                lista.innerHTML += "</ul>";
+            }
+
+            function removeItem(i){
+                list.splice(i,1);
+                renderList();
+            }
+
+            function addItem(i){
+                const value = document.getElementById("nombre").value;
+                for(var i = 0; i <= list.length-1; i++){
+                    if(list[i] == value){
+                        alert("El valor ya existe");
+                        return;
+                    }
+                }
+                list.push(value);
+                renderList();
+            }
+
+        </script>
+
+        <title>Mi primera pagina web</title>
+    </head>
+
+    <body>
+        <h1>Titulo 1</h1>
+        <button onclick="clearList()">ClearList</button>
+        <input id="nombre" type="text"/><button onclick="addItem()">addNumber</button>
+        <div id="lista">
+            <ul>
+
+            </ul>            
+        </div>
+        <table border ="4">
+            <tr>
+                <td>Celda 1</td><td>Celda 2</td>
+            </tr>
+        </table>
+    </body>
+</html>

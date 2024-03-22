@@ -1,0 +1,21 @@
+.imagen{
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2ptNWdmcTFyZDN1MzFsNmJmbHhxZXBkaTQybmUwb2xhOXZjYTgwMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fvfRNXU8gkH0sLvDzQ/giphy.gif");
+  background-size: cover;
+}
+
+.stitch{  
+  background-image: url("https://media.giphy.com/media/5cREBFcGOkC2I/giphy.gif?cid=790b7611trkxq3r5zyjabihsi5vm5ywa4r63qq8i17jovppe&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  background-size: cover;
+  width: 25%;
+  padding: 0%;
+  border-style: solid;
+  color: violet;
+  border-width: 10%;
+  text-indent: 10px;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.text{
+  color: aqua;
+  text-shadow: 0 0 3px rgb(175, 89, 255), 0 0 10px WHITE;
+}
